@@ -7,13 +7,13 @@
           <div>
             <!-- Website Logo -->
             <a href="#" class="flex items-center py-4 px-2">
-              <img src="logo.png" alt="Logo" class="h-8 mr-2" />
+              <img src="logo.png" alt="Logo" class="h-6 lg:h-8 mr-2" />
             </a>
           </div>
           <!-- Primary Navbar items -->
           <div class="hidden md:flex items-center space-x-1">
-            <a
-              href=""
+            <NuxtLink
+              to="/"
               class="
                 py-4
                 px-2
@@ -22,10 +22,10 @@
                 transition
                 duration-300
               "
-              >Home</a
+              >Home</NuxtLink
             >
-            <a
-              href=""
+            <NuxtLink
+              to="/our-legacy"
               class="
                 py-4
                 px-2
@@ -34,10 +34,10 @@
                 transition
                 duration-300
               "
-              >Our Legacy</a
+              >Our Legacy</NuxtLink
             >
-            <a
-              href=""
+            <NuxtLink
+              to="/collection-2021"
               class="
                 py-4
                 px-2
@@ -46,10 +46,10 @@
                 transition
                 duration-300
               "
-              >Collection 2021</a
+              >Collection 2021</NuxtLink
             >
-            <a
-              href=""
+            <NuxtLink
+              to="/contact"
               class="
                 py-4
                 px-2
@@ -58,7 +58,7 @@
                 transition
                 duration-300
               "
-              >Contact</a
+              >Contact</NuxtLink
             >
           </div>
         </div>
@@ -72,7 +72,10 @@
         </div>
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
-          <button class="outline-none mobile-menu-button">
+          <button
+            class="outline-none mobile-menu-button"
+            @click="isOpen = !isOpen"
+          >
             <svg
               class="w-6 h-6 text-gray-500 hover:text-green-500"
               x-show="!showMenu"
@@ -90,83 +93,71 @@
       </div>
     </div>
     <!-- mobile menu -->
-    <div class="hidden mobile-menu">
+    <div :class="isOpen ? 'block' : 'hidden'" class="mobile-menu">
       <ul class="">
         <li class="active">
-          <a
-            href="index.html"
-            class="
-              block
-              text-sm
-              px-2
-              py-4
-              text-white
-              bg-green-500
-              font-semibold
-            "
-            >Home</a
+          <NuxtLink to="/" class="block text-sm px-2 py-4 hover:bg-primary"
+            >Home</NuxtLink
           >
         </li>
         <li>
-          <a
-            href="#services"
+          <NuxtLink
+            to="/our-legacy"
             class="
               block
               text-sm
               px-2
               py-4
-              hover:bg-green-500
+              hover:bg-primary
               transition
               duration-300
             "
-            >Services</a
+            >Our Legacy</NuxtLink
           >
         </li>
         <li>
-          <a
-            href="#about"
+          <NuxtLink
+            to="/collection-2021"
             class="
               block
               text-sm
               px-2
               py-4
-              hover:bg-green-500
+              hover:bg-primary
               transition
               duration-300
             "
-            >About</a
+            >Collection 2021</NuxtLink
           >
         </li>
         <li>
-          <a
-            href="#contact"
+          <NuxtLink
+            to="/contact"
             class="
               block
               text-sm
               px-2
               py-4
-              hover:bg-green-500
+              hover:bg-primary
               transition
               duration-300
             "
-            >Contact Us</a
+            >Contact</NuxtLink
           >
         </li>
       </ul>
     </div>
-    <script>
-      const btn = document.querySelector('button.mobile-menu-button')
-      const menu = document.querySelector('.mobile-menu')
-
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden')
-      })
-    </script>
   </nav>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      isOpen: false,
+    }
+  },
+}
 </script>
 
 <style></style>
