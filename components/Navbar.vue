@@ -6,9 +6,9 @@
         <div class="flex flex-1 space-x-7 justify-between">
           <div>
             <!-- Website Logo -->
-            <a href="#" class="flex items-center py-4 px-2">
-              <img src="logo.png" alt="Logo" class="h-6 lg:h-8 mr-2" />
-            </a>
+            <NuxtLink to="/" class="flex items-center py-4 px-2">
+              <img src="/logo.png" alt="Logo" class="h-6 lg:h-8 mr-2" />
+            </NuxtLink>
           </div>
           <!-- Primary Navbar items -->
           <div class="hidden md:flex items-center space-x-1">
@@ -18,6 +18,7 @@
                 py-4
                 px-2
                 uppercase
+                font-normal
                 hover:text-primary
                 transition
                 duration-300
@@ -30,6 +31,7 @@
                 py-4
                 px-2
                 uppercase
+                font-normal
                 hover:text-primary
                 transition
                 duration-300
@@ -42,6 +44,7 @@
                 py-4
                 px-2
                 uppercase
+                font-normal
                 hover:text-primary
                 transition
                 duration-300
@@ -54,6 +57,7 @@
                 py-4
                 px-2
                 uppercase
+                font-normal
                 hover:text-primary
                 transition
                 duration-300
@@ -66,7 +70,15 @@
         <div class="hidden md:flex items-center space-x-3">
           <a
             href="tel:+919820110051"
-            class="py-2 px-2 rounded hover:text-primary transition duration-300"
+            class="
+              py-2
+              px-2
+              rounded
+              hover:text-primary
+              transition
+              duration-300
+              font-normal
+            "
             >+91-98201-10051</a
           >
         </div>

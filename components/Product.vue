@@ -1,36 +1,42 @@
 <template>
-  <div>
-    <div class="group relative mb-4">
-      <img
-        class="w-72 h-96 object-cover"
-        :src="product.images"
-        :alt="product.name"
-      />
-      <div
-        class="
-          transition
-          opacity-0
-          absolute
-          bottom-5
-          transform
-          group-hover:-translate-y-6
-          uppercase
-          group-hover:opacity-100
-          mx-6
-          left-auto
-          right-auto
-          w-3/4
-          px-8
-          py-4
-          z-50
-          bg-white
-        "
-      >
-        View Product
+  <NuxtLink :to="productUrl">
+    <div class="shadow-md h-96 rounded-md border border-gray">
+      <div class="group relative mb-4">
+        <img
+          class="w-full h-96 object-cover rounded-md"
+          :src="product.images"
+          :alt="product.name"
+        />
+        <NuxtLink
+          :to="productUrl"
+          class="
+            block
+            transition
+            opacity-0
+            absolute
+            bottom-0
+            transform
+            group-hover:-translate-y-6
+            uppercase
+            group-hover:opacity-100
+            left-auto
+            text-center
+            right-auto
+            w-full
+            px-8
+            py-4
+            rounded-bl-md rounded-br-md
+            z-50
+            bg-primary
+            text-black
+          "
+        >
+          View Product
+        </NuxtLink>
       </div>
+      <div v-if="showName" class="text-left text-lg">{{ product.name }}</div>
     </div>
-    <div class="text-left text-lg">{{ product.name }}</div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -39,6 +45,15 @@ export default {
     product: {
       type: Object,
       default: null,
+    },
+    showName: {
+      type: Boolean,
+      default: true,
+    },
+  },
+  computed: {
+    productUrl() {
+      return `/products/${this.product.slug}`
     },
   },
 }

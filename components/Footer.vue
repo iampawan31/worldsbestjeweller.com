@@ -34,7 +34,7 @@
               :icon="faInstagram"
             ></font-awesome-icon
           ></a>
-          <a href="#"
+          <a href="https://www.facebook.com/nalinjhaveri" target="_blank"
             ><font-awesome-icon size="2x" :icon="faFacebook"></font-awesome-icon
           ></a>
         </div>

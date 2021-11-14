@@ -12,6 +12,7 @@
             v-for="(product, index) in products"
             :key="index"
             :product="product"
+            :show-name="false"
           />
         </div>
         <div class="mt-4">

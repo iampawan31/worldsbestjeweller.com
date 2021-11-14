@@ -1,17 +1,17 @@
 <template>
   <client-only>
-    <swiper class="swiper w-full h-1/3" :options="swiperOption">
+    <swiper class="swiper h-screen" :options="swiperOption">
       <swiper-slide
-        ><img class="w-full" src="/slides/1.jpeg" alt=""
+        ><img class="w-full h-screen object-cover" src="/slides/1.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/2.jpeg" alt=""
+        ><img class="w-full h-screen object-cover" src="/slides/2.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/3.jpeg" alt=""
+        ><img class="w-full h-screen object-cover" src="/slides/3.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/4.jpeg" alt=""
+        ><img class="w-full h-screen object-cover" src="/slides/4.jpeg" alt=""
       /></swiper-slide>
       <div slot="pagination" class="swiper-pagination"></div>
     </swiper>
@@ -24,8 +24,15 @@ export default {
   data() {
     return {
       swiperOption: {
+        loop: true,
+        speed: 600,
+        autoplay: {
+          delay: 4000,
+        },
+        effecct: 'slide',
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
       },
     }

@@ -1,0 +1,101 @@
+<template>
+  <div class="container mx-auto my-16">
+    <div class="text-5xl font-light text-center mt-10 mb-24">
+      Collection 2021
+    </div>
+    <div class="grid grid-cols-4 gap-10">
+      <div class="h-auto px-4 pb-6">
+        <div class="flex flex-col mb-4">
+          <div class="text-sm uppercase mb-4 p-4 bg-gray font-semibold">
+            Collection Type
+          </div>
+          <div
+            v-for="(collection, index) in collectionTypes"
+            :key="index"
+            class="mb-1"
+          >
+            <input
+              type="checkbox"
+              name="collection"
+              class="text-sm"
+              :value="collection"
+            />
+            <label :for="collection" class="text-sm">{{ collection }}</label>
+          </div>
+        </div>
+        <div class="flex flex-col mb-4">
+          <div class="text-sm uppercase mb-4 p-4 bg-gray font-semibold">
+            Gem Type
+          </div>
+          <div v-for="(gem, index) in gemsTypes" :key="index" class="mb-1">
+            <input type="checkbox" name="gem" class="text-sm" :value="gem" />
+            <label :for="gem" class="text-sm">{{ gem }}</label>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="text-sm uppercase mb-4 p-4 bg-gray font-semibold">
+            Jewellery Type
+          </div>
+          <div
+            v-for="(jewellery, index) in jewelleryTypes"
+            :key="index"
+            class="mb-1"
+          >
+            <input
+              type="checkbox"
+              name="jewellery"
+              class="text-sm"
+              :value="jewellery"
+            />
+            <label :for="jewellery" class="text-sm">{{ jewellery }}</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3 grid grid-cols-3 gap-x-8 gap-y-48">
+        <Product
+          v-for="(product, index) in products"
+          :key="index"
+          :product="product"
+          :show-name="true"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  async asyncData({ $content, error }) {
+    let products
+    try {
+      products = await $content('products').fetch()
+    } catch (e) {
+      return error({ message: 'Products not found' })
+    }
+    return {
+      products,
+    }
+  },
+  data() {
+    return {
+      gemsTypes: [
+        'Blue Sapphire',
+        'Diamond',
+        'Emerald',
+        'Pearl',
+        'Pink Diamond',
+        'Ruby',
+        'Tourmaline',
+        'Yellow Sapphire',
+      ],
+      jewelleryTypes: ['Bracelet', 'Earrings', 'Necklace', 'Ring', 'Tiara'],
+      collectionTypes: [
+        'Bridal and Wedding Jewellery',
+        "Collector's Edition Jewellery",
+      ],
+    }
+  },
+}
+</script>
+
+<style></style>
