@@ -6,10 +6,12 @@ module.exports = {
       primary: '#ffcc33',
       white: '#ffffff',
       black: '#000000',
+      gray: '#f3f3f3',
     },
     extend: {
       fontFamily: {
         default: 'Work Sans',
+        hindi: 'Gotu',
       },
     },
   },

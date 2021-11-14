@@ -6,7 +6,7 @@
     <!-- Browse Collection -->
     <div class="container mx-auto py-16">
       <div class="text-center">
-        <div class="font-light text-5xl">Browse Collection</div>
+        <div class="font-light mb-16 text-5xl">Browse Collection</div>
         <div class="grid grid-cols-4 py-10 gap-4">
           <Product
             v-for="(product, index) in products"
@@ -33,7 +33,9 @@
       </div>
     </div>
     <!-- Testimonials -->
-    <TestimonialSlider />
+    <div class="bg-gray">
+      <TestimonialSlider />
+    </div>
   </div>
 </template>
 

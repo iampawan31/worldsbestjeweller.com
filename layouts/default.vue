@@ -2,6 +2,7 @@
   <div class="font-default">
     <Navbar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 

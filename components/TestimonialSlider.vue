@@ -4,72 +4,58 @@
       <ul class="slider">
         <li>
           <div class="testimonial-slider-content">
-            <div class="text-2xl mb-4">
-              Never visiting a dispensary again, crazy prices for less quality
-              than I can grow. No thanks bro!
+            <div class="flex justify-center items-center">
+              <Rating :rating="5" />
             </div>
-            <p class="source">Matthew A, San Diego. Verified Customer.</p>
+            <div class="text-3xl font-light mb-4">
+              My association with Lustrous Gems is decades old. I value every
+              jewelery purchase made from them. Everything is an asset and a
+              promising investment.
+            </div>
+            <p class="source">CHRISTOPHER J.</p>
+            <p>CFO, Fortune 500, US</p>
           </div>
         </li>
         <li>
           <div class="testimonial-slider-content">
-            <div class="text-2xl mb-4">
-              After looking at cheap kits on amazon and expensive automated kits
-              online I opted for this kit because of the guarantee and support.
-              I'm probaly the worst gardener in the world lol and I still was
-              able to grow really nice bud.
+            <div class="flex justify-center items-center">
+              <Rating :rating="5" />
             </div>
-            <p class="source">Lisa L, El Cajon. Verified Customer.</p>
+            <div class="text-3xl mb-4 font-light">
+              Lustrous Gems is our family jeweller for generations. We
+              appreciate the personalized guidance by the director, Nalin
+              Jhaveri at every step.
+            </div>
+            <p class="source">RUBINA MUNJAL</p>
+            <p>Top Corporate House, India</p>
           </div>
         </li>
         <li>
           <div class="testimonial-slider-content">
-            <div class="text-2xl mb-4">
-              I love the way the nutrients come already packaged for each week
-              so I don't have to figure anything out. Taking care of the plants
-              was so much easier than I thought, shoulda been doing it years ago
-              damn.
+            <div class="flex justify-center items-center">
+              <Rating :rating="5" />
             </div>
-            <p class="source">Mitchell N, Santa Ana. Verified Customer.</p>
+            <div class="text-2xl mb-4">
+              My association with Lustrous Gems is decades old. I value every
+              jewelery purchase made from them. Everything is an asset and a
+              promising investment.
+            </div>
+            <p class="source">CHRISTOPHER J.</p>
+            <p>CFO, Fortune 500, US</p>
           </div>
         </li>
         <li>
           <div class="testimonial-slider-content">
-            <div class="text-2xl mb-4">
-              Grew about a pound in 3 months and now I'm set for the year...if
-              my boys stop hitting me up for seshs hahaha
+            <div class="flex justify-center items-center">
+              <Rating :rating="5" />
             </div>
-            <p class="source">Joe L, Verified Customer.</p>
-          </div>
-        </li>
-        <li>
-          <div class="testimonial-slider-content">
             <div class="text-2xl mb-4">
-              These guys know their stuff.. I'm too busy to take care of the
-              plants myself but still wanted to grow so I got the support
-              package. They show up and take care of the weekly maintenance.
-              About 3 weeks left of flowering and this stuff already looks
-              better than what i normally buy.
+              Lustrous Gems is our family jeweller for generations. We
+              appreciate the personalized guidance by the director, Nalin
+              Jhaveri at every step.
             </div>
-            <p class="source">Gerald G, Riverside. Verified Customer.</p>
-          </div>
-        </li>
-        <li>
-          <div class="testimonial-slider-content">
-            <div class="text-2xl mb-4">
-              I love the way the nutrients come already packaged for each week
-              so I don't have to figure anything out. Taking care of the plants
-              was so much easier than I thought, shoulda been doing it years ago
-              damn. Mitchell N, Santa Ana. Verified Customer. Grew about a pound
-              in 3 months and now I'm set for the year...if my boys stop hitting
-              me up for seshs hahaha Joe L, Verified Customer. These guys know
-              their stuff.. I'm too busy to take care of the plants myself but
-              still wanted to grow so I got the support package. They show up
-              and take care of the weekly maintenance. About 3 weeks left of
-              flowering and this stuff already looks better than what i normally
-              buy.
-            </div>
-            <p class="source">Gerald G, Riverside. Verified Customer.</p>
+            <p class="source">RUBINA MUNJAL</p>
+            <p>Top Corporate House, India</p>
           </div>
         </li>
       </ul>
@@ -96,7 +82,7 @@ export default {}
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 250px;
+  height: 450px;
   overflow: hidden;
   margin: 0 auto;
 }

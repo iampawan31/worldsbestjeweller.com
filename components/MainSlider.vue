@@ -2,16 +2,16 @@
   <client-only>
     <swiper class="swiper w-full h-1/3" :options="swiperOption">
       <swiper-slide
-        ><img class="w-full" src="/slides/1.jpg" alt=""
+        ><img class="w-full" src="/slides/1.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/2.jpg" alt=""
+        ><img class="w-full" src="/slides/2.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/3.jpg" alt=""
+        ><img class="w-full" src="/slides/3.jpeg" alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full" src="/slides/4.jpg" alt=""
+        ><img class="w-full" src="/slides/4.jpeg" alt=""
       /></swiper-slide>
       <div slot="pagination" class="swiper-pagination"></div>
     </swiper>
