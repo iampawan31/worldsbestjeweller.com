@@ -105,7 +105,7 @@
       </div>
     </div>
     <!-- mobile menu -->
-    <div :class="isOpen ? 'block' : 'hidden'" class="mobile-menu">
+    <div :class="isOpen ? 'block' : 'hidden'" class="mobile-menu transition">
       <ul class="">
         <li class="active">
           <NuxtLink to="/" class="block text-sm px-2 py-4 hover:bg-primary"
@@ -164,13 +164,15 @@
 
 <script>
 export default {
-  middleware({ store, redirect }) {
-    this.isOpen = false
-  },
   data() {
     return {
       isOpen: false,
     }
+  },
+  watch: {
+    $route() {
+      this.isOpen = false
+    },
   },
 }
 </script>
