@@ -1,17 +1,29 @@
 <template>
   <client-only>
-    <swiper class="swiper h-screen" :options="swiperOption">
+    <swiper class="w-full swiper h-72 lg:h-screen" :options="swiperOption">
       <swiper-slide
-        ><img class="w-full h-screen object-cover" src="/slides/1.jpeg" alt=""
+        ><img
+          class="w-full h-72 lg:h-screen object-cover"
+          src="/slides/1.jpeg"
+          alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full h-screen object-cover" src="/slides/2.jpeg" alt=""
+        ><img
+          class="w-full h-72 lg:h-screen object-cover"
+          src="/slides/2.jpeg"
+          alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full h-screen object-cover" src="/slides/3.jpeg" alt=""
+        ><img
+          class="w-full h-72 lg:h-screen object-cover"
+          src="/slides/3.jpeg"
+          alt=""
       /></swiper-slide>
       <swiper-slide
-        ><img class="w-full h-screen object-cover" src="/slides/4.jpeg" alt=""
+        ><img
+          class="w-full h-72 lg:h-screen object-cover"
+          src="/slides/4.jpeg"
+          alt=""
       /></swiper-slide>
       <div slot="pagination" class="swiper-pagination"></div>
     </swiper>

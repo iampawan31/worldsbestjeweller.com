@@ -1,19 +1,17 @@
 <template>
   <div>
     <!-- Main Slider -->
-    <div></div>
     <MainSlider />
     <!-- Browse Collection -->
     <div class="container mx-auto py-16">
       <div class="text-center">
-        <div class="font-light mb-16 text-5xl">Browse Collection</div>
-        <div class="grid grid-cols-4 py-10 gap-4">
-          <Product
-            v-for="(product, index) in products"
-            :key="index"
-            :product="product"
-            :show-name="false"
-          />
+        <div class="font-light mb-6 lg:mb-16 text-4xl lg:text-5xl">
+          Browse Collection
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 py-10 gap-4 px-4 lg:px-0">
+          <div v-for="(product, index) in products" :key="index">
+            <Product :key="index" :product="product" :show-name="false" />
+          </div>
         </div>
         <div class="mt-4">
           <NuxtLink
@@ -23,7 +21,8 @@
               text-black
               px-8
               py-4
-              text-2xl
+              text-xl
+              lg:text-2xl
               hover:bg-black hover:text-primary
               transition
             "

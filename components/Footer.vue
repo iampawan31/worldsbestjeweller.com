@@ -1,29 +1,57 @@
 <template>
   <div class="py-10">
-    <div class="container mx-auto px-48">
+    <div class="container mx-auto px-4 lg:px-48">
       <div class="flex flex-col justify-center items-center space-y-4">
         <div>
-          <img src="/logo.png" class="w-60 p-1 bg-opacity-50" alt="" />
+          <img src="/logo.png" class="w-48 lg:w-60 p-1 bg-opacity-50" alt="" />
         </div>
-        <div class="flex flex-row space-x-4">
+        <div class="flex flex-row space-x-2 lg:space-x-4">
           <NuxtLink
             to="/"
-            class="hover:text-primary transition text-lg font-light uppercase"
+            class="
+              hover:text-primary
+              transition
+              text-xs
+              lg:text-lg
+              font-light
+              uppercase
+            "
             >Home</NuxtLink
           >
           <NuxtLink
             to="/our-legacy"
-            class="hover:text-primary transition text-lg font-light uppercase"
+            class="
+              hover:text-primary
+              transition
+              text-xs
+              lg:text-lg
+              font-light
+              uppercase
+            "
             >Our legacy</NuxtLink
           >
           <NuxtLink
             to="/collection-2021"
-            class="hover:text-primary transition text-lg font-light uppercase"
+            class="
+              hover:text-primary
+              transition
+              text-xs
+              lg:text-lg
+              font-light
+              uppercase
+            "
             >Collection 2021</NuxtLink
           >
           <NuxtLink
             to="/contact"
-            class="hover:text-primary transition text-lg font-light uppercase"
+            class="
+              hover:text-primary
+              transition
+              text-xs
+              lg:text-lg
+              font-light
+              uppercase
+            "
             >Contact</NuxtLink
           >
         </div>

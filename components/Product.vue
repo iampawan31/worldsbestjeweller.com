@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="productUrl">
+  <div>
     <div class="shadow-md h-96 rounded-md border border-gray">
       <div class="group relative mb-4">
         <img
@@ -12,13 +12,14 @@
           class="
             block
             transition
-            opacity-0
+            opacity-100
+            lg:opacity-0
             absolute
             bottom-0
             transform
-            group-hover:-translate-y-6
+            lg:group-hover:-translate-y-6
             uppercase
-            group-hover:opacity-100
+            lg:group-hover:opacity-100
             left-auto
             text-center
             right-auto
@@ -36,7 +37,7 @@
       </div>
       <div v-if="showName" class="text-left text-lg">{{ product.name }}</div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 
 <script>
