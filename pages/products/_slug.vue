@@ -22,7 +22,7 @@
         <div class="text-4xl font-light mb-4">
           {{ productName }}
         </div>
-        <div class="flex space-x-4 mb-4">
+        <div class="flex flex-col lg:flex-row space-y-2 lg:space-x-4 mb-4">
           <div
             v-for="(category, index) in productCategories"
             :key="index"
@@ -38,7 +38,7 @@
             {{ category }}
           </div>
         </div>
-        <div class="text-xl mb-10">SKU: {{ productSku }}</div>
+        <div class="text-xl mb-6 lg:mb-10">SKU: {{ productSku }}</div>
         <div class="text-2xl font-semi">Product Description:</div>
         <div class="font-normal mb-4">
           {{ productDescription }}
@@ -60,6 +60,7 @@
     </div>
     <div
       class="
+        mx-2
         px-4
         py-4
         text-xl

@@ -4,7 +4,7 @@
       Collection 2021
     </div>
     <div class="grid grid-cols-4 gap-10">
-      <div class="hidden h-auto px-4 pb-6">
+      <div class="hidden lg:block h-auto px-4 pb-6">
         <div class="flex flex-col mb-4">
           <div class="text-sm uppercase mb-4 p-4 bg-gray font-semibold">
             Collection Type

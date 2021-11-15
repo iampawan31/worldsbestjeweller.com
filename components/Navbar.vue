@@ -164,6 +164,9 @@
 
 <script>
 export default {
+  middleware({ store, redirect }) {
+    this.isOpen = false
+  },
   data() {
     return {
       isOpen: false,

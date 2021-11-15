@@ -14,24 +14,24 @@
           absolute
           top-1/2
           lg:left-10
-          bg-primary
+          bg-black bg-opacity-80
           rounded-xl
           shadow-sm
-          text-black
+          text-white
           px-10
-          py-4
+          py-6
         "
       >
-        <div class="text-2xl lg:text-6xl font-semi">
+        <div class="text-2xl lg:text-6xl font-light">
           REGAL JEWELLERY SINCE 1807
         </div>
-        <div class="italic text-xl lg:text-2xl font-thin">
+        <div class="italic text-xl lg:text-2xl font-semibold">
           “JEWELLERY THAT CELEBRATES LIFE.”
         </div>
       </div>
     </div>
     <!-- Section Displayed only in mobile view -->
-    <div class="bg-primary">
+    <div class="bg-black text-white">
       <div class="container mx-auto px-4 text-center py-10 lg:hidden">
         <div class="text-xl font-semi">REGAL JEWELLERY SINCE 1807</div>
         <div class="italic text-sm font-thin">

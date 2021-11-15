@@ -4,25 +4,25 @@
       <swiper-slide
         ><img
           class="w-full h-72 lg:h-screen object-cover"
-          src="/slides/1.jpeg"
+          src="/slides/1.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
           class="w-full h-72 lg:h-screen object-cover"
-          src="/slides/2.jpeg"
+          src="/slides/2.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
           class="w-full h-72 lg:h-screen object-cover"
-          src="/slides/3.jpeg"
+          src="/slides/3.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
           class="w-full h-72 lg:h-screen object-cover"
-          src="/slides/4.jpeg"
+          src="/slides/4.jpg"
           alt=""
       /></swiper-slide>
       <div slot="pagination" class="swiper-pagination"></div>
