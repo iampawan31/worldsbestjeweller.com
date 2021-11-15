@@ -1,7 +1,10 @@
 <template>
-  <div class="container mx-auto py-24">
-    <div v-if="product.length > 0" class="grid grid-cols-12 gap-16">
-      <div class="h-auto col-span-5">
+  <div class="container mx-auto py-16 lg:py-24">
+    <div
+      v-if="product.length > 0"
+      class="grid grid-cols-1 lg:grid-cols-12 gap-16"
+    >
+      <div class="h-auto lg:col-span-5 px-2 lg:px-0">
         <img
           :src="productImageUrl"
           :alt="productName"
@@ -15,7 +18,7 @@
           "
         />
       </div>
-      <div class="col-span-7">
+      <div class="lg:col-span-7 px-2 lg:px-0">
         <div class="text-4xl font-light mb-4">
           {{ productName }}
         </div>
@@ -57,10 +60,12 @@
     </div>
     <div
       class="
-        text-center text-3xl
+        px-4
+        py-4
+        text-xl
+        lg:text-center lg:text-3xl
         font-light
-        px-48
-        py-10
+        lg:px-48 lg:py-10
         bg-gray
         my-10
         rounded-md

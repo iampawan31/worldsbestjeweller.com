@@ -1,10 +1,10 @@
 <template>
   <div class="container mx-auto my-16">
-    <div class="text-5xl font-light text-center mt-10 mb-24">
+    <div class="text-3xl lg:text-5xl font-light text-center mt-10 mb-24">
       Collection 2021
     </div>
     <div class="grid grid-cols-4 gap-10">
-      <div class="h-auto px-4 pb-6">
+      <div class="hidden h-auto px-4 pb-6">
         <div class="flex flex-col mb-4">
           <div class="text-sm uppercase mb-4 p-4 bg-gray font-semibold">
             Collection Type
@@ -51,7 +51,18 @@
           </div>
         </div>
       </div>
-      <div class="col-span-3 grid grid-cols-3 gap-x-8 gap-y-48">
+      <div
+        class="
+          px-4
+          lg:px-0
+          col-span-4
+          lg:col-span-3
+          grid grid-cols-1
+          lg:grid-cols-3
+          gap-x-8 gap-y-36
+          lg:gap-y-48
+        "
+      >
         <Product
           v-for="(product, index) in products"
           :key="index"
