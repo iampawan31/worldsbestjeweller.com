@@ -1,27 +1,30 @@
 <template>
   <client-only>
-    <swiper class="w-full swiper h-72 lg:h-screen" :options="swiperOption">
+    <swiper
+      class="w-full swiper h-72 md:h-96 lg:h-screen"
+      :options="swiperOption"
+    >
       <swiper-slide
         ><img
-          class="w-full h-72 lg:h-screen object-cover"
+          class="w-full h-72 md:h-96 lg:h-screen object-cover"
           src="/slides/1.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
-          class="w-full h-72 lg:h-screen object-cover"
+          class="w-full h-72 md:h-96 lg:h-screen object-cover"
           src="/slides/2.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
-          class="w-full h-72 lg:h-screen object-cover"
+          class="w-full h-72 md:h-96 lg:h-screen object-cover"
           src="/slides/3.jpg"
           alt=""
       /></swiper-slide>
       <swiper-slide
         ><img
-          class="w-full h-72 lg:h-screen object-cover"
+          class="w-full h-72 md:h-96 lg:h-screen object-cover"
           src="/slides/4.jpg"
           alt=""
       /></swiper-slide>

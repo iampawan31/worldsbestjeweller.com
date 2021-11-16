@@ -8,7 +8,17 @@
         <div class="font-light mb-6 lg:mb-16 text-4xl lg:text-5xl">
           Browse Collection
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 py-10 gap-4 px-4 lg:px-0">
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-4
+            py-10
+            gap-4
+            px-4
+            lg:px-2
+          "
+        >
           <div v-for="(product, index) in products" :key="index">
             <Product :key="index" :product="product" :show-name="false" />
           </div>

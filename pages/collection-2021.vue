@@ -15,6 +15,7 @@
             class="mb-1"
           >
             <input
+              v-model="selectedCollectionType"
               type="checkbox"
               name="collection"
               class="text-sm"
@@ -28,7 +29,13 @@
             Gem Type
           </div>
           <div v-for="(gem, index) in gemsTypes" :key="index" class="mb-1">
-            <input type="checkbox" name="gem" class="text-sm" :value="gem" />
+            <input
+              v-model="selectedGemType"
+              type="checkbox"
+              name="gem"
+              class="text-sm"
+              :value="gem"
+            />
             <label :for="gem" class="text-sm">{{ gem }}</label>
           </div>
         </div>
@@ -42,6 +49,7 @@
             class="mb-1"
           >
             <input
+              v-model="selectedJewelleryType"
               type="checkbox"
               name="jewellery"
               class="text-sm"
@@ -54,17 +62,18 @@
       <div
         class="
           px-4
-          lg:px-0
+          lg:px-4
           col-span-4
           lg:col-span-3
           grid grid-cols-1
+          sm:grid-cols-2
           lg:grid-cols-3
           gap-x-8 gap-y-36
           lg:gap-y-48
         "
       >
         <Product
-          v-for="(product, index) in products"
+          v-for="(product, index) in productResult"
           :key="index"
           :product="product"
           :show-name="true"
@@ -87,8 +96,13 @@ export default {
       products,
     }
   },
+
   data() {
     return {
+      selectedJewelleryType: [],
+      selectedGemType: [],
+      selectedCollectionType: [],
+      filteredProducts: [],
       gemsTypes: [
         'Blue Sapphire',
         'Diamond',
@@ -105,6 +119,44 @@ export default {
         "Collector's Edition Jewellery",
       ],
     }
+  },
+  computed: {
+    isFilterSelected() {
+      return (
+        this.selectedJewelleryType.length > 0 ||
+        this.selectedGemType.length > 0 ||
+        this.selectedCollectionType.length > 0
+      )
+    },
+    productResult() {
+      if (!this.isFilterSelected) {
+        return this.products
+      } else {
+        return this.filteredProducts
+      }
+    },
+  },
+  watch: {
+    selectedJewelleryType() {
+      this.getFilteredData()
+    },
+    selectedGemType() {
+      this.getFilteredData()
+    },
+    selectedCollectionType() {
+      this.getFilteredData()
+    },
+  },
+  methods: {
+    async getFilteredData() {
+      const products = await this.$content('products')
+        .where({
+          gems: { $in: this.selectedGemType },
+        })
+        .fetch()
+
+      this.filteredProducts = products
+    },
   },
 }
 </script>

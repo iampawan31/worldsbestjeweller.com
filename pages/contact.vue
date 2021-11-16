@@ -3,7 +3,9 @@
     <div class="container mx-auto px-2 py-6 lg:py-24">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div class="bg-white px-4 py-10 lg:p-10 shadow">
-          <div class="text-2xl lg:text-4xl font-light mb-10">Contact:</div>
+          <div class="text-2xl sm:text-3xl lg:text-4xl font-light mb-10">
+            Contact:
+          </div>
           <div class="my-6">
             <div class="text-xl">Email:</div>
             <div class="text-lg font-light">info@worldsbestjeweller.com</div>
@@ -23,7 +25,7 @@
           </div>
         </div>
         <div class="bg-white px-4 py-10 lg:p-10 shadow">
-          <div class="text-2xl lg:text-4xl font-light mb-10">
+          <div class="text-2xl sm:text-3xl lg:text-4xl font-light mb-10">
             Leave us a message here:
           </div>
           <form action="" method="post">

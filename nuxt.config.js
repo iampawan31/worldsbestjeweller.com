@@ -61,7 +61,13 @@ export default {
     '@nuxt/content',
   ],
   content: {
-    nestedProperties: ['products.slug', 'products.isFeatured'],
+    nestedProperties: [
+      'products.slug',
+      'products.isFeatured',
+      'products.gems',
+      'products.jewellery',
+      'products.categories',
+    ],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

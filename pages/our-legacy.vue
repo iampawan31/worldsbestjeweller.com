@@ -5,14 +5,15 @@
       <img
         src="/our-legacy.jpg"
         alt="Our Legacy"
-        class="h-48 lg:h-screen object-cover w-full"
+        class="h-48 sm:h-72 lg:h-screen object-cover w-full"
       />
       <div
         class="
           hidden
-          lg:block
+          md:block
           absolute
           top-1/2
+          md:left-4
           lg:left-10
           bg-black bg-opacity-80
           rounded-xl
@@ -22,7 +23,7 @@
           py-6
         "
       >
-        <div class="text-2xl lg:text-6xl font-light">
+        <div class="text-2xl sm:text-3xl lg:text-6xl font-light">
           REGAL JEWELLERY SINCE 1807
         </div>
         <div class="italic text-xl lg:text-2xl font-semibold">
@@ -31,8 +32,8 @@
       </div>
     </div>
     <!-- Section Displayed only in mobile view -->
-    <div class="bg-black text-white">
-      <div class="container mx-auto px-4 text-center py-10 lg:hidden">
+    <div class="bg-black md:hidden text-white">
+      <div class="container mx-auto px-4 text-center py-10">
         <div class="text-xl font-semi">REGAL JEWELLERY SINCE 1807</div>
         <div class="italic text-sm font-thin">
           “JEWELLERY THAT CELEBRATES LIFE.”
@@ -40,9 +41,18 @@
       </div>
     </div>
     <!-- Second Section -->
-    <div class="container mx-auto py-4 lg:py-16 px-4">
+    <div class="container mx-auto py-4 sm:py-8 lg:py-16 px-4">
       <div class="flex flex-col justify-center items-center">
-        <div class="font-hindi text-2xl lg:text-4xl text-center leading-normal">
+        <div
+          class="
+            font-hindi
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+            text-center
+            leading-normal
+          "
+        >
           ..मैं नर हूँ, तू नारायण है.. मैं हूँ संसार के हाथों में.. संसार
           तुम्हारे हाथों में.....
         </div>
@@ -65,7 +75,7 @@
       </div>
     </div>
     <!-- Third Section -->
-    <div class="container mx-auto py-16 px-4 lg:px-0">
+    <div class="container mx-auto py-8 lg:py-16 px-4 lg:px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div>
           <img

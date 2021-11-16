@@ -67,7 +67,7 @@
           </div>
         </div>
         <!-- Secondary Navbar items -->
-        <div class="hidden md:flex items-center space-x-3">
+        <div class="hidden lg:flex items-center space-x-3">
           <a
             href="tel:+919820110051"
             class="
