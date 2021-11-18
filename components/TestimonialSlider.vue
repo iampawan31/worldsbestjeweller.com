@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-8 lg:py-16 px-4 lg:px-40 text-center">
+  <div class="container mx-auto py-8 lg:py-2 px-4 lg:px-40 text-center">
     <div class="testimonial-slider">
       <ul class="slider">
         <li>
@@ -12,8 +12,8 @@
               jewelery purchase made from them. Everything is an asset and a
               promising investment.
             </div>
-            <p class="source">CHRISTOPHER J.</p>
-            <p>CFO, Fortune 500, US</p>
+            <div class="source font-semibold">CHRISTOPHER J.</div>
+            <div class="text-xs">CFO, Fortune 500, US</div>
           </div>
         </li>
         <li>
@@ -26,8 +26,8 @@
               appreciate the personalized guidance by the director, Nalin
               Jhaveri at every step.
             </div>
-            <p class="source">RUBINA MUNJAL</p>
-            <p>Top Corporate House, India</p>
+            <div class="source font-semibold">RUBINA MUNJAL</div>
+            <div class="text-xs">Top Corporate House, India</div>
           </div>
         </li>
         <li>
@@ -40,8 +40,8 @@
               jewelery purchase made from them. Everything is an asset and a
               promising investment.
             </div>
-            <p class="source">CHRISTOPHER J.</p>
-            <p>CFO, Fortune 500, US</p>
+            <div class="source font-semibold">CHRISTOPHER J.</div>
+            <div class="text-xs">CFO, Fortune 500, US</div>
           </div>
         </li>
         <li>
@@ -54,8 +54,8 @@
               appreciate the personalized guidance by the director, Nalin
               Jhaveri at every step.
             </div>
-            <p class="source">RUBINA MUNJAL</p>
-            <p>Top Corporate House, India</p>
+            <div class="source font-semibold">RUBINA MUNJAL</div>
+            <div class="text-xs">Top Corporate House, India</div>
           </div>
         </li>
       </ul>
@@ -72,7 +72,6 @@ export default {}
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 100px;
 }
 
 .testimonial-slider ul.slider {
@@ -82,7 +81,7 @@ export default {}
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 450px;
+  height: 350px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -97,20 +96,20 @@ export default {}
 .testimonial-slider ul.slider li:nth-child(1) {
   opacity: 1;
 
-  -webkit-animation: fade-animation-1 25s infinite;
-  animation: fade-animation-1 25s infinite;
+  -webkit-animation: fade-animation-1 20s infinite;
+  animation: fade-animation-1 20s infinite;
 }
 .testimonial-slider ul.slider li:nth-child(2) {
-  -webkit-animation: fade-animation-2 25s infinite;
-  animation: fade-animation-2 25s infinite;
+  -webkit-animation: fade-animation-2 20s infinite;
+  animation: fade-animation-2 20s infinite;
 }
 .testimonial-slider ul.slider li:nth-child(3) {
-  -webkit-animation: fade-animation-3 25s infinite;
-  animation: fade-animation-3 25s infinite;
+  -webkit-animation: fade-animation-3 20s infinite;
+  animation: fade-animation-3 20s infinite;
 }
 .testimonial-slider ul.slider li:nth-child(4) {
-  -webkit-animation: fade-animation-4 25s infinite;
-  animation: fade-animation-4 25s infinite;
+  -webkit-animation: fade-animation-4 20s infinite;
+  animation: fade-animation-4 20s infinite;
 }
 
 /* KEYFRAME DECLARATIONS */

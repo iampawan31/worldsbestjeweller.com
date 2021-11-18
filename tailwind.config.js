@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         default: 'Work Sans',
         hindi: 'Gotu',
+        sliderFont: 'Cinzel',
       },
     },
   },

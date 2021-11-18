@@ -42,6 +42,73 @@
         </div>
       </div>
     </div>
+    <!-- Highlights -->
+    <div class="container mx-auto px-2 lg:px-0 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+          <div class="text-center">
+            <font-awesome-icon
+              size="2x"
+              fixed
+              class="text-primary"
+              :icon="envelope"
+            ></font-awesome-icon>
+          </div>
+          <div class="text-2xl lg:text-3xl font-light text-center pb-2">
+            By Invitation Only
+          </div>
+          <div>
+            <div>
+              We welcome you to the world of luxury. We extend access to our
+              premium collection by invite only.
+            </div>
+            <div>
+              Our closed buyer network assures exclusivity for our patrons.
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+          <div class="text-center">
+            <font-awesome-icon
+              size="2x"
+              fixed
+              class="text-primary"
+              :icon="lock"
+            ></font-awesome-icon>
+          </div>
+          <div class="text-2xl lg:text-3xl font-light text-center pb-2">
+            Highest Confidentiality
+          </div>
+          <div>
+            <div>
+              We promise utmost confidentiality to our patrons. This makes us
+              the most trusted jewellery brand in the world amongst celebrities
+              and top professionals.
+            </div>
+          </div>
+        </div>
+        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+          <div class="text-center">
+            <font-awesome-icon
+              size="2x"
+              fixed
+              class="text-primary"
+              :icon="user"
+            ></font-awesome-icon>
+          </div>
+          <div class="text-2xl lg:text-3xl font-light text-center pb-2">
+            Award Winning Concierge
+          </div>
+          <div>
+            <div>We understand time is the new currency.</div>
+            <div>
+              Our award-winning design concierge makes every purchase for our
+              patrons - a privileged one.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Testimonials -->
     <div class="bg-gray">
       <TestimonialSlider />
@@ -50,7 +117,12 @@
 </template>
 
 <script>
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import {
+  faLongArrowAltRight,
+  faEnvelope,
+  faLock,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
 export default {
   async asyncData({ $content, error }) {
     let products
@@ -66,6 +138,15 @@ export default {
   computed: {
     longArrow() {
       return faLongArrowAltRight
+    },
+    envelope() {
+      return faEnvelope
+    },
+    lock() {
+      return faLock
+    },
+    user() {
+      return faUser
     },
   },
 }

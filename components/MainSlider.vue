@@ -15,12 +15,13 @@
         <div
           class="
             text-white
-            lg:bg-white lg:bg-opacity-30
+            lg:bg-black lg:bg-opacity-60
             bg-black bg-opacity-70
             p-1
+            lg:p-3
             absolute
             bottom-10
-            lg:top-10
+            lg:bottom-48
             left-2
             lg:left-10
             md:text-2xl
@@ -29,7 +30,7 @@
             md:max-w-xl
             lg:max-w-5xl
             uppercase
-            font-bold
+            font-sliderFont
           "
         >
           {{ slide.text }}

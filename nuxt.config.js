@@ -27,6 +27,10 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Gotu&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap',
+      },
     ],
   },
   loading: {
