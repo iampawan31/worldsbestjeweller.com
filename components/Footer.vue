@@ -56,7 +56,7 @@
           >
         </div>
         <div class="flex justify-center items-center space-x-4">
-          <a href="#"
+          <a href="http://instagram.com/jhaverinalin" target="_blank"
             ><font-awesome-icon
               size="2x"
               :icon="faInstagram"

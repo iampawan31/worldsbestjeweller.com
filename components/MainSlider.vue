@@ -15,8 +15,8 @@
         <div
           class="
             text-white
-            lg:bg-black lg:bg-opacity-60
-            bg-black bg-opacity-70
+            lg:bg-gray lg:bg-opacity-60
+            bg-gray bg-opacity-70
             p-1
             lg:p-3
             absolute

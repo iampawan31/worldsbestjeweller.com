@@ -45,12 +45,14 @@
     <!-- Highlights -->
     <div class="container mx-auto px-2 lg:px-0 py-16">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+        <div
+          class="bg-gray text-black shadow-md p-2 lg:py-8 lg:px-4 rounded-md"
+        >
           <div class="text-center">
             <font-awesome-icon
-              size="2x"
+              size="4x"
               fixed
-              class="text-primary"
+              class="text-primary mb-6"
               :icon="envelope"
             ></font-awesome-icon>
           </div>
@@ -67,12 +69,14 @@
             </div>
           </div>
         </div>
-        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+        <div
+          class="bg-gray text-black shadow-md p-2 lg:py-8 lg:px-4 rounded-md"
+        >
           <div class="text-center">
             <font-awesome-icon
-              size="2x"
+              size="4x"
               fixed
-              class="text-primary"
+              class="text-primary mb-6"
               :icon="lock"
             ></font-awesome-icon>
           </div>
@@ -87,12 +91,14 @@
             </div>
           </div>
         </div>
-        <div class="bg-black text-white shadow-md p-2 lg:p-4 rounded-md">
+        <div
+          class="bg-gray text-black shadow-md p-2 lg:py-8 lg:px-4 rounded-md"
+        >
           <div class="text-center">
             <font-awesome-icon
-              size="2x"
+              size="4x"
               fixed
-              class="text-primary"
+              class="text-primary mb-6"
               :icon="user"
             ></font-awesome-icon>
           </div>
