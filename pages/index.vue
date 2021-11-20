@@ -11,7 +11,7 @@
         <div
           class="
             grid grid-cols-1
-            md:grid-cols-2
+            sm:grid-cols-2
             lg:grid-cols-4
             py-10
             gap-4
@@ -45,7 +45,15 @@
     </div>
     <!-- Highlights -->
     <div class="container mx-auto px-2 lg:px-0 py-16">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div
+        class="
+          grid grid-cols-1
+          sm:grid-cols-2 sm:gap-4
+          md:gap-6
+          lg:grid-cols-3
+          gap-12
+        "
+      >
         <div
           class="bg-gray text-black shadow-md p-2 lg:py-8 lg:px-4 rounded-md"
         >
@@ -53,7 +61,7 @@
             <font-awesome-icon
               size="4x"
               fixed
-              class="text-primary mb-6"
+              class="text-primary mb-2 md:mb-6"
               :icon="envelope"
             ></font-awesome-icon>
           </div>
@@ -77,14 +85,23 @@
             <font-awesome-icon
               size="4x"
               fixed
-              class="text-primary mb-6"
+              class="text-primary mb-2 md:mb-6"
               :icon="lock"
             ></font-awesome-icon>
           </div>
-          <div class="text-2xl lg:text-3xl font-light text-center pb-2">
+          <div
+            class="
+              sm:text-xl
+              md:text-2xl
+              lg:text-3xl
+              font-light
+              text-center
+              pb-2
+            "
+          >
             Highest Confidentiality
           </div>
-          <div>
+          <div class="text-sm md:text-base">
             <div>
               We promise utmost confidentiality to our patrons. This makes us
               the most trusted jewellery brand in the world amongst celebrities
@@ -99,7 +116,7 @@
             <font-awesome-icon
               size="4x"
               fixed
-              class="text-primary mb-6"
+              class="text-primary mb-2 md:mb-6"
               :icon="user"
             ></font-awesome-icon>
           </div>
@@ -122,7 +139,7 @@
     </div>
     <!-- Rendevouz -->
     <div class="container mx-auto py-16">
-      <div class="grid md:grid-cols-2 gap-4">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-4">
         <div
           class="
             order-last
@@ -151,16 +168,32 @@
         <div>
           <div class="grid grid-cols-2">
             <div>
-              <img class="w-full h-60 object-cover" src="/home-1.jpg" alt="" />
+              <img
+                class="w-full h-48 md:h-60 object-cover"
+                src="/home-1.jpg"
+                alt=""
+              />
             </div>
             <div>
-              <img class="w-full h-60 object-cover" src="/home-2.jpg" alt="" />
+              <img
+                class="w-full h-48 md:h-60 object-cover"
+                src="/home-2.jpg"
+                alt=""
+              />
             </div>
             <div>
-              <img class="w-full h-60 object-cover" src="/home-3.jpg" alt="" />
+              <img
+                class="w-full h-48 md:h-60 object-cover"
+                src="/home-3.jpg"
+                alt=""
+              />
             </div>
             <div>
-              <img class="w-full h-60 object-cover" src="/home-4.jpg" alt="" />
+              <img
+                class="w-full h-48 md:h-60 object-cover"
+                src="/home-4.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>

@@ -32,9 +32,11 @@
     </div>
     <!-- Section Displayed only in mobile view -->
     <div class="bg-black md:hidden text-white">
-      <div class="container mx-auto px-4 text-center py-10">
-        <div class="text-xl font-semi">REGAL JEWELLERY SINCE 1807</div>
-        <div class="italic text-sm font-thin">
+      <div class="container mx-auto px-4 text-center py-6">
+        <div class="text-xl sm:text-4xl font-sliderFont">
+          REGAL JEWELLERY SINCE 1807
+        </div>
+        <div class="italic text-sm font-light">
           “JEWELLERY THAT CELEBRATES LIFE.”
         </div>
       </div>
@@ -75,7 +77,7 @@
     </div>
     <!-- Third Section -->
     <div class="container mx-auto py-8 lg:py-16 px-4 lg:px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-10">
         <div>
           <img
             src="/our-legacy-second-image.jpg"
@@ -109,7 +111,7 @@
       </div>
     </div>
     <!-- Fourth Section -->
-    <div class="bg-gray py-24">
+    <div class="bg-gray py-6 sm:py-10 md:py-16 lg:py-24">
       <div class="container mx-auto px-4 lg:px-0">
         <div class="flex flex-col justify-center items-center">
           <div class="text-center text-2xl lg:text-4xl font-light">

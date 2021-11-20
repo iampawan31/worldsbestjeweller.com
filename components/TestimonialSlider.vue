@@ -2,7 +2,18 @@
   <div class="container mx-auto py-8 lg:py-2 px-4 lg:px-40 text-center">
     <div class="testimonial-slider block w-full h-auto">
       <ul
-        class="slider h-60 block list-none p-0 relative w-full overflow-hidden"
+        class="
+          slider
+          h-60
+          md:h-64
+          lg:h-96
+          block
+          list-none
+          p-0
+          relative
+          w-full
+          overflow-hidden
+        "
       >
         <li
           v-for="(testimonial, index) in testimonials"
@@ -13,7 +24,7 @@
             <div class="flex justify-center items-center">
               <Rating :rating="testimonial.rating" />
             </div>
-            <div class="sm:text-3xl font-light mb-4">
+            <div class="sm:text-xl md:text-3xl font-light mb-4">
               {{ testimonial.feedback }}
             </div>
             <div class="source font-semibold">{{ testimonial.name }}</div>

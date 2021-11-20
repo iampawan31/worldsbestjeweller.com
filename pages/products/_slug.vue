@@ -2,9 +2,9 @@
   <div class="container mx-auto py-16 lg:py-24">
     <div
       v-if="product.length > 0"
-      class="grid grid-cols-1 lg:grid-cols-12 gap-16"
+      class="grid grid-cols-1 md:grid-cols-12 gap-16"
     >
-      <div class="h-auto lg:col-span-5 px-2 lg:px-0">
+      <div class="h-auto md:col-span-5 px-2 lg:px-0">
         <img
           :src="productImageUrl"
           :alt="productName"
@@ -18,7 +18,7 @@
           "
         />
       </div>
-      <div class="lg:col-span-7 px-2 lg:px-0">
+      <div class="md:col-span-7 px-2 lg:px-0">
         <div class="text-4xl font-light mb-4">
           {{ productName }}
         </div>
@@ -73,8 +73,8 @@
         shadow
       "
     >
-      For more details or custom requests, Live Chat on WhatsApp or call
-      +91-9915381868.
+      For more information or custom requests, reach us at +91-98201-10051 or
+      email us at info@worldsbestjeweller.com
     </div>
   </div>
 </template>

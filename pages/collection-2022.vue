@@ -1,6 +1,18 @@
 <template>
-  <div class="container mx-auto my-16">
-    <div class="text-3xl lg:text-5xl font-light text-center mt-10 mb-24">
+  <div class="container mx-auto pb-24 md:pb-0 md:my-16">
+    <div
+      class="
+        bg-gray
+        py-2
+        text-3xl
+        lg:text-5xl
+        font-light
+        text-center
+        mt-4
+        md:mt-10
+        mb-24
+      "
+    >
       Collection 2022
     </div>
     <div class="grid grid-cols-4 gap-10">

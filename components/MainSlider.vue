@@ -23,9 +23,11 @@
             lg:bottom-48
             left-2
             lg:left-10
+            sm:text-xl
             md:text-2xl
             lg:text-5xl
             max-w-xs
+            sm:max-w-lg
             md:max-w-xl
             lg:max-w-5xl
             uppercase
@@ -49,7 +51,7 @@ export default {
         loop: true,
         speed: 2000,
         autoplay: {
-          delay: 4000,
+          delay: 400000,
         },
         effect: 'fade',
         fadeEffect: {
@@ -95,4 +97,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.swiper-pagination-bullet-active {
+  background-color: #ffcc33;
+}
+</style>

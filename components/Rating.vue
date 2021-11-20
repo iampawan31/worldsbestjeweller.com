@@ -1,7 +1,7 @@
 <template>
   <div class="flex my-4 lg:my-10">
     <div v-for="n in 5" :key="n">
-      <font-awesome-icon size="lg:4x" class="text-primary" :icon="faStar" />
+      <font-awesome-icon size="2x" class="text-primary" :icon="faStar" />
     </div>
   </div>
 </template>
