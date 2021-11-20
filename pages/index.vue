@@ -119,6 +119,42 @@
     <div class="bg-gray">
       <TestimonialSlider />
     </div>
+    <!-- Rendevouz -->
+    <div class="container mx-auto py-16">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex justify-center align-middle items-center">
+          <NuxtLink
+            class="
+              bg-primary
+              uppercase
+              text-2xl
+              font-light
+              px-10
+              py-4
+              hover:shadow-md
+            "
+            to="/collection-2021"
+            >Explore Collection</NuxtLink
+          >
+        </div>
+        <div>
+          <div class="grid grid-cols-2">
+            <div>
+              <img class="w-full h-60 object-cover" src="/home-1.jpg" alt="" />
+            </div>
+            <div>
+              <img class="w-full h-60 object-cover" src="/home-2.jpg" alt="" />
+            </div>
+            <div>
+              <img class="w-full h-60 object-cover" src="/home-3.jpg" alt="" />
+            </div>
+            <div>
+              <img class="w-full h-60 object-cover" src="/home-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -66,6 +66,7 @@
             ><font-awesome-icon size="2x" :icon="faFacebook"></font-awesome-icon
           ></a>
         </div>
+        <div>© {{ currentYear }} All rights reserved. Lustrous Gems Group</div>
       </div>
     </div>
   </div>
@@ -80,6 +81,9 @@ export default {
     },
     faFacebook() {
       return faFacebook
+    },
+    currentYear() {
+      return new Date().getFullYear()
     },
   },
 }
