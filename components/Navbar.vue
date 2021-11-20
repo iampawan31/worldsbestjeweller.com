@@ -4,10 +4,14 @@
     <div class="mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex flex-1 space-x-7 justify-between">
-          <div>
+          <div class="flex items-center justify-center py-4 lg:py-0">
             <!-- Website Logo -->
-            <NuxtLink to="/" class="flex items-center py-4 px-2">
-              <img src="/logo.png" alt="Logo" class="h-6 lg:h-8 mr-2" />
+            <NuxtLink to="/" class="">
+              <img
+                src="/logo.png"
+                alt="Logo"
+                class="h-6 lg:h-10 mr-2 lg:mr-0"
+              />
             </NuxtLink>
           </div>
           <!-- Primary Navbar items -->
@@ -39,7 +43,7 @@
               >Our Legacy</NuxtLink
             >
             <NuxtLink
-              to="/collection-2021"
+              to="/collection-2022"
               class="
                 py-4
                 px-2
@@ -49,7 +53,7 @@
                 transition
                 duration-300
               "
-              >Collection 2021</NuxtLink
+              >Collection 2022</NuxtLink
             >
             <NuxtLink
               to="/contact"
@@ -129,7 +133,7 @@
         </li>
         <li>
           <NuxtLink
-            to="/collection-2021"
+            to="/collection-2022"
             class="
               block
               text-sm
@@ -139,7 +143,7 @@
               transition
               duration-300
             "
-            >Collection 2021</NuxtLink
+            >Collection 2022</NuxtLink
           >
         </li>
         <li>

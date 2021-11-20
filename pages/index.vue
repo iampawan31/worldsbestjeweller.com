@@ -25,19 +25,20 @@
         </div>
         <div class="mt-4">
           <NuxtLink
-            to="/collection-2021"
+            to="/collection-2022"
             class="
               bg-primary
               text-black
               px-8
+              font-light
+              uppercase
               py-4
               text-xl
               lg:text-2xl
               hover:bg-black hover:text-primary
               transition
             "
-            >Explore Collection Now
-            <font-awesome-icon :icon="longArrow"></font-awesome-icon>
+            >Explore Collection
           </NuxtLink>
         </div>
       </div>
@@ -121,8 +122,17 @@
     </div>
     <!-- Rendevouz -->
     <div class="container mx-auto py-16">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="flex justify-center align-middle items-center">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div
+          class="
+            order-last
+            md:order-first
+            flex
+            justify-center
+            align-middle
+            items-center
+          "
+        >
           <NuxtLink
             class="
               bg-primary
@@ -131,9 +141,10 @@
               font-light
               px-10
               py-4
-              hover:shadow-md
+              transition
+              hover:bg-black hover:text-primary
             "
-            to="/collection-2021"
+            to="/collection-2022"
             >Explore Collection</NuxtLink
           >
         </div>

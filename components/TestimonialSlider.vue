@@ -1,61 +1,23 @@
 <template>
   <div class="container mx-auto py-8 lg:py-2 px-4 lg:px-40 text-center">
-    <div class="testimonial-slider">
-      <ul class="slider">
-        <li>
+    <div class="testimonial-slider block w-full h-auto">
+      <ul
+        class="slider h-60 block list-none p-0 relative w-full overflow-hidden"
+      >
+        <li
+          v-for="(testimonial, index) in testimonials"
+          :key="index"
+          class="absolute block w-full opacity-0"
+        >
           <div class="testimonial-slider-content">
             <div class="flex justify-center items-center">
-              <Rating :rating="5" />
+              <Rating :rating="testimonial.rating" />
             </div>
-            <div class="text-3xl font-light mb-4">
-              My association with Lustrous Gems is decades old. I value every
-              jewelery purchase made from them. Everything is an asset and a
-              promising investment.
+            <div class="sm:text-3xl font-light mb-4">
+              {{ testimonial.feedback }}
             </div>
-            <div class="source font-semibold">CHRISTOPHER J.</div>
-            <div class="text-xs">CFO, Fortune 500, US</div>
-          </div>
-        </li>
-        <li>
-          <div class="testimonial-slider-content">
-            <div class="flex justify-center items-center">
-              <Rating :rating="5" />
-            </div>
-            <div class="text-3xl mb-4 font-light">
-              Lustrous Gems is our family jeweller for generations. We
-              appreciate the personalized guidance by the director, Nalin
-              Jhaveri at every step.
-            </div>
-            <div class="source font-semibold">RUBINA MUNJAL</div>
-            <div class="text-xs">Top Corporate House, India</div>
-          </div>
-        </li>
-        <li>
-          <div class="testimonial-slider-content">
-            <div class="flex justify-center items-center">
-              <Rating :rating="5" />
-            </div>
-            <div class="text-2xl mb-4">
-              My association with Lustrous Gems is decades old. I value every
-              jewelery purchase made from them. Everything is an asset and a
-              promising investment.
-            </div>
-            <div class="source font-semibold">CHRISTOPHER J.</div>
-            <div class="text-xs">CFO, Fortune 500, US</div>
-          </div>
-        </li>
-        <li>
-          <div class="testimonial-slider-content">
-            <div class="flex justify-center items-center">
-              <Rating :rating="5" />
-            </div>
-            <div class="text-2xl mb-4">
-              Lustrous Gems is our family jeweller for generations. We
-              appreciate the personalized guidance by the director, Nalin
-              Jhaveri at every step.
-            </div>
-            <div class="source font-semibold">RUBINA MUNJAL</div>
-            <div class="text-xs">Top Corporate House, India</div>
+            <div class="source font-semibold">{{ testimonial.name }}</div>
+            <div class="text-xs">{{ testimonial.designation }}</div>
           </div>
         </li>
       </ul>
@@ -64,33 +26,50 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      testimonials: [
+        {
+          rating: 5,
+          feedback:
+            'My association with Lustrous Gems is decades old. I value every jewelery purchase made from them. Everything is an asset and apromising investment.',
+          name: 'CHRISTOPHER J.',
+          designation: 'CFO, Fortune 500, US',
+        },
+        {
+          rating: 5,
+          feedback:
+            'Lustrous Gems is our family jeweller for generations. We appreciate the personalized guidance by the director, Nalin Jhaveri at every step.',
+          name: 'RUBINA MUNJAL',
+          designation: 'Top Corporate House, India',
+        },
+        {
+          rating: 5,
+          feedback:
+            'My association with Lustrous Gems is decades old. I value every jewelery purchase made from them. Everything is an asset and apromising investment.',
+          name: 'CHRISTOPHER J.',
+          designation: 'CFO, Fortune 500, US',
+        },
+        {
+          rating: 5,
+          feedback:
+            'Lustrous Gems is our family jeweller for generations. We appreciate the personalized guidance by the director, Nalin Jhaveri at every step.',
+          name: 'RUBINA MUNJAL',
+          designation: 'Top Corporate House, India',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style scoped>
-.testimonial-slider {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .testimonial-slider ul.slider {
-  display: block;
-  list-style: none;
-  padding: 0;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
   margin: 0 auto;
 }
 
 .testimonial-slider ul.slider li {
-  position: absolute;
-  display: block;
-  width: 100%;
-  opacity: 0;
   margin: 0 auto;
 }
 .testimonial-slider ul.slider li:nth-child(1) {

@@ -16,17 +16,16 @@
           md:left-4
           lg:left-10
           bg-black bg-opacity-80
-          rounded-xl
           shadow-sm
           text-white
           px-10
           py-6
         "
       >
-        <div class="text-2xl sm:text-3xl lg:text-6xl font-light">
+        <div class="text-2xl sm:text-3xl lg:text-6xl font-sliderFont">
           REGAL JEWELLERY SINCE 1807
         </div>
-        <div class="italic text-xl lg:text-2xl font-semibold">
+        <div class="italic text-xl lg:text-2xl font-light">
           “JEWELLERY THAT CELEBRATES LIFE.”
         </div>
       </div>

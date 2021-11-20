@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto my-16">
     <div class="text-3xl lg:text-5xl font-light text-center mt-10 mb-24">
-      Collection 2021
+      Collection 2022
     </div>
     <div class="grid grid-cols-4 gap-10">
       <div class="hidden lg:block h-auto px-4 pb-6">

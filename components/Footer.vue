@@ -1,9 +1,13 @@
 <template>
-  <div class="py-10">
+  <div class="py-10 bg-black text-white">
     <div class="container mx-auto px-4 lg:px-48">
       <div class="flex flex-col justify-center items-center space-y-4">
         <div>
-          <img src="/logo.png" class="w-48 lg:w-60 p-1 bg-opacity-50" alt="" />
+          <img
+            src="/logo-white.png"
+            class="w-48 lg:w-72 p-1 bg-opacity-50"
+            alt=""
+          />
         </div>
         <div class="flex flex-row space-x-2 lg:space-x-4">
           <NuxtLink
@@ -31,7 +35,7 @@
             >Our legacy</NuxtLink
           >
           <NuxtLink
-            to="/collection-2021"
+            to="/collection-2022"
             class="
               hover:text-primary
               transition
@@ -40,7 +44,7 @@
               font-light
               uppercase
             "
-            >Collection 2021</NuxtLink
+            >Collection 2022</NuxtLink
           >
           <NuxtLink
             to="/contact"
@@ -66,7 +70,9 @@
             ><font-awesome-icon size="2x" :icon="faFacebook"></font-awesome-icon
           ></a>
         </div>
-        <div>© {{ currentYear }} All rights reserved. Lustrous Gems Group</div>
+        <div class="text-xs lg:text-base">
+          © {{ currentYear }} All rights reserved. Lustrous Gems Group
+        </div>
       </div>
     </div>
   </div>
