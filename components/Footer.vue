@@ -71,7 +71,7 @@
           ></a>
         </div>
         <div class="text-xs lg:text-base">
-          © {{ currentYear }} All rights reserved. Lustrous Gems Group
+          All rights reserved. Lustrous Gems Group
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ export default {
         loop: true,
         speed: 2000,
         autoplay: {
-          delay: 400000,
+          delay: 4000,
         },
         effect: 'fade',
         fadeEffect: {
