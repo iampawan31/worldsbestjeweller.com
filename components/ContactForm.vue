@@ -1,5 +1,6 @@
 <template>
   <form
+    ref="contactForm"
     action="https://formspree.io/f/mayargre"
     method="POST"
     @submit.prevent="submitForm"
@@ -111,7 +112,7 @@ export default {
           this.loading = false
           this.success = true
           this.status = 'Thanks for your submission!'
-          e.reset()
+          this.$refs.contactForm.reset()
         })
         .catch((error) => {
           this.loading = false
