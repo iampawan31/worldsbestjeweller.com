@@ -1,7 +1,7 @@
 <template>
   <form
     action="https://formspree.io/f/mayargre"
-    method="post"
+    method="POST"
     @submit.prevent="submitForm"
   >
     <div class="mb-4">
@@ -50,6 +50,7 @@
     <div>
       <button
         type="submit"
+        :disabled="loading"
         class="
           px-16
           py-4
@@ -83,6 +84,7 @@ export default {
     return {
       status: '',
       success: false,
+      loading: false,
     }
   },
   computed: {
@@ -92,6 +94,7 @@ export default {
   },
   methods: {
     submitForm(e) {
+      this.loading = true
       const data = new FormData(e.target)
       fetch(e.target.action, {
         method: 'POST',
@@ -101,11 +104,13 @@ export default {
         },
       })
         .then((response) => {
+          this.loading = false
           this.success = true
           this.status = 'Thanks for your submission!'
           e.reset()
         })
         .catch((error) => {
+          this.loading = false
           console.log(error)
           this.success = false
           this.status = 'Oops! There was a problem submitting your form'
