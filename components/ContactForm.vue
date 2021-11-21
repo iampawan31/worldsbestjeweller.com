@@ -2,7 +2,7 @@
   <form
     action="https://formspree.io/f/mayargre"
     method="post"
-    @click:submit.prevent="submitForm"
+    @submit.prevent="submitForm"
   >
     <div class="mb-4">
       <label for="name" class="text-xl">Name:</label>
@@ -67,7 +67,11 @@
         Send
       </button>
     </div>
-    <div v-if="status" class="w-full">
+    <div
+      v-if="status"
+      :class="success ? 'bg-green' : 'bg-red'"
+      class="w-full my-4 rounded py-2 px-2 text-white"
+    >
       {{ status }}
     </div>
   </form>
@@ -78,6 +82,7 @@ export default {
   data() {
     return {
       status: '',
+      success: false,
     }
   },
   computed: {
@@ -96,11 +101,13 @@ export default {
         },
       })
         .then((response) => {
+          this.success = true
           this.status = 'Thanks for your submission!'
           e.reset()
         })
         .catch((error) => {
           console.log(error)
+          this.success = false
           this.status = 'Oops! There was a problem submitting your form'
         })
     },

@@ -7,7 +7,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title:
-      'Lustrous Gems Group - Jewellers Since 1807 | World&#039;s Best Jeweller | Diamonds, Gems &amp; Jewellery | Lustrous Gems Group',
+      "Lustrous Gems Group - Jewellers Since 1807 | World's Best Jeweller | Diamonds, Gems & Jewellery | Lustrous Gems Group",
     htmlAttrs: {
       lang: 'en',
     },
