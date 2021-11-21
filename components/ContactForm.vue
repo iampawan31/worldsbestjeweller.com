@@ -70,7 +70,7 @@
 export default {
   computed: {
     googleCaptchaKey() {
-      return this.process.env.NUXT_ENV_CAPTCHA_KEY
+      return process.env.NUXT_ENV_CAPTCHA_KEY
     },
   },
 }
