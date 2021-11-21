@@ -36,7 +36,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    script: [
+      {
+        src: 'https://www.google.com/recaptcha/api.js',
+        async: true,
+        defer: true,
+      },
+    ],
+  },
+}
 </script>
 
 <style></style>
