@@ -41,7 +41,7 @@
       />
     </div>
     <div class="my-4">
-      <div class="g-recaptcha" data-sitekey="googleCaptchaKey"></div>
+      <div class="g-recaptcha" :data-sitekey="googleCaptchaKey"></div>
     </div>
     <div>
       <button
