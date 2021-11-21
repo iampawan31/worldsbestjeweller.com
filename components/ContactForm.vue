@@ -8,6 +8,7 @@
       <label for="name" class="text-xl">Name:</label>
       <br />
       <input
+        required
         class="rounded-md w-full p-4 bg-gray focus:border-primary"
         type="text"
         name="name"
@@ -18,6 +19,7 @@
       <label for="name" class="text-xl">Email:</label>
       <br />
       <input
+        required
         class="rounded-md w-full p-4 bg-gray focus:border-primary"
         type="email"
         name="email"
@@ -28,6 +30,7 @@
       <label for="phone">Phone:</label>
       <br />
       <input
+        required
         class="rounded-md w-full p-4 bg-gray focus:border-primary"
         type="text"
         name="phone"
@@ -38,6 +41,7 @@
       <label for="message" class="text-xl">Message:</label>
       <br />
       <textarea
+        required
         class="rounded-md w-full p-4 bg-gray focus:border-primary"
         row="100"
         name="message"
@@ -93,10 +97,10 @@ export default {
     },
   },
   methods: {
-    submitForm(e) {
+    async submitForm(e) {
       this.loading = true
       const data = new FormData(e.target)
-      fetch(e.target.action, {
+      await fetch(e.target.action, {
         method: 'POST',
         body: data,
         headers: {
