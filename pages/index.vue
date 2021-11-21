@@ -89,16 +89,7 @@
               :icon="lock"
             ></font-awesome-icon>
           </div>
-          <div
-            class="
-              sm:text-xl
-              md:text-2xl
-              lg:text-3xl
-              font-light
-              text-center
-              pb-2
-            "
-          >
+          <div class="text-2xl lg:text-3xl font-light text-center pb-2">
             Highest Confidentiality
           </div>
           <div class="text-sm md:text-base">
