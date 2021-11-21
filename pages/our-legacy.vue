@@ -3,7 +3,7 @@
     <!-- Main Banner -->
     <div class="relative">
       <img
-        src="/our-legacy.jpg"
+        src="/our-legacy.webp"
         alt="Our Legacy"
         class="h-48 sm:h-72 lg:h-screen object-cover w-full"
       />
@@ -80,7 +80,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-10">
         <div>
           <img
-            src="/our-legacy-second-image.jpg"
+            src="/our-legacy-second-image.webp"
             class="rounded-md shadow-md"
             alt=""
           />

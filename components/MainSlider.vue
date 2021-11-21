@@ -64,31 +64,31 @@ export default {
       },
       slideImages: [
         {
-          image: '/slides/1.jpg',
+          image: '/slides/1.webp',
           text: 'Jeweller to the royal families of the world since 1807',
         },
         {
-          image: '/slides/2.jpg',
+          image: '/slides/2.webp',
           text: 'regal estate jewellery from the treasure troves',
         },
         {
-          image: '/slides/3.jpg',
+          image: '/slides/3.webp',
           text: 'splendid artistry',
         },
         {
-          image: '/slides/4.jpg',
+          image: '/slides/4.webp',
           text: 'intricate & timeless craftsmanship',
         },
         {
-          image: '/slides/5.jpg',
+          image: '/slides/5.webp',
           text: 'delicate luxury',
         },
         {
-          image: '/slides/6.jpg',
+          image: '/slides/6.webp',
           text: 'jewellery that is your crowning glory',
         },
         {
-          image: '/slides/7.jpg',
+          image: '/slides/7.webp',
           text: 'masters of dreams',
         },
       ],

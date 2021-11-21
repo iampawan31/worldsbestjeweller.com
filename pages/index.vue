@@ -161,28 +161,28 @@
             <div>
               <img
                 class="w-full h-48 md:h-60 object-cover"
-                src="/home-1.jpg"
+                src="/home-1.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="w-full h-48 md:h-60 object-cover"
-                src="/home-2.jpg"
+                src="/home-2.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="w-full h-48 md:h-60 object-cover"
-                src="/home-3.jpg"
+                src="/home-3.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="w-full h-48 md:h-60 object-cover"
-                src="/home-4.jpg"
+                src="/home-4.webp"
                 alt=""
               />
             </div>
