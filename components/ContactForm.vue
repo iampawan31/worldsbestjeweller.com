@@ -1,5 +1,9 @@
 <template>
-  <form action="https://formspree.io/f/mayargre" method="post">
+  <form
+    action="https://formspree.io/f/mayargre"
+    method="post"
+    @click:submit.prevent="submitForm"
+  >
     <div class="mb-4">
       <label for="name" class="text-xl">Name:</label>
       <br />
@@ -63,14 +67,42 @@
         Send
       </button>
     </div>
+    <div v-if="status" class="w-full">
+      {{ status }}
+    </div>
   </form>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      status: '',
+    }
+  },
   computed: {
     googleCaptchaKey() {
       return process.env.NUXT_ENV_CAPTCHA_KEY
+    },
+  },
+  methods: {
+    submitForm(e) {
+      const data = new FormData(e.target)
+      fetch(e.target.action, {
+        method: 'POST',
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          this.status = 'Thanks for your submission!'
+          e.reset()
+        })
+        .catch((error) => {
+          console.log(error)
+          this.status = 'Oops! There was a problem submitting your form'
+        })
     },
   },
 }
