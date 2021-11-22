@@ -10,7 +10,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Bracelet", "Ring", "Earrings", "Necklace"],
-    "images": "/products/2a.webp"
+    "image": "2a_db6e6b4098.webp",
+    "images": "/products/2a_db6e6b4098.webp"
   },
   {
     "id": 979,
@@ -23,7 +24,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Tourmaline", "Pearl"],
     "jewellery": ["Necklace"],
-    "images": "/products/14716112_10154338151425073_8076253815207027985_n.webp"
+    "image": "14716112_10154338151425073_8076253815207027985_n_fdd2df27ae.webp",
+    "images": "/products/14716112_10154338151425073_8076253815207027985_n_fdd2df27ae.webp"
   },
   {
     "id": 980,
@@ -39,7 +41,8 @@
     ],
     "gems": ["Blue Sapphire", "Diamond"],
     "jewellery": ["Necklace"],
-    "images": "/products/10308563_10152365106205073_5730757883243672354_n.webp"
+    "image": "10308563_10152365106205073_5730757883243672354_n_9d122c03a0.webp",
+    "images": "/products/10308563_10152365106205073_5730757883243672354_n_9d122c03a0.webp"
   },
   {
     "id": 981,
@@ -52,7 +55,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Ruby"],
     "jewellery": ["Earrings", "Necklace"],
-    "images": "/products/10614107_10152661704170073_3385468997271403505_n.webp"
+    "image": "10614107_10152661704170073_3385468997271403505_n_460fc8064d.webp",
+    "images": "/products/10614107_10152661704170073_3385468997271403505_n_460fc8064d.webp"
   },
   {
     "id": 106,
@@ -68,7 +72,8 @@
     ],
     "gems": ["Diamond", "Yellow Sapphire"],
     "jewellery": ["Earrings", "Necklace"],
-    "images": "/products/1.webp"
+    "image": "1_967deaf3d1.webp",
+    "images": "/products/1_967deaf3d1.webp"
   },
   {
     "id": 107,
@@ -81,7 +86,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Bracelet", "Ring", "Earrings", "Necklace"],
-    "images": "/products/2.webp"
+    "image": "2_12ed8bbbc1.webp",
+    "images": "/products/2_12ed8bbbc1.webp"
   },
   {
     "id": 108,
@@ -94,7 +100,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Necklace"],
-    "images": "/products/4.webp"
+    "image": "4_866b52406e.webp",
+    "images": "/products/4_866b52406e.webp"
   },
   {
     "id": 109,
@@ -107,7 +114,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Pearl"],
     "jewellery": ["Necklace"],
-    "images": "/products/5.webp"
+    "image": "5_7504a31750.webp",
+    "images": "/products/5_7504a31750.webp"
   },
   {
     "id": 110,
@@ -123,7 +131,8 @@
     ],
     "gems": ["Diamond"],
     "jewellery": ["Bracelet", "Necklace"],
-    "images": "/products/6.webp"
+    "image": "6_f03c8ea149.webp",
+    "images": "/products/6_f03c8ea149.webp"
   },
   {
     "id": 114,
@@ -136,7 +145,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Ruby"],
     "jewellery": ["Necklace"],
-    "images": "/products/7.webp"
+    "image": "7_36e90b162d.webp",
+    "images": "/products/7_36e90b162d.webp"
   },
   {
     "id": 115,
@@ -149,7 +159,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond"],
     "jewellery": ["Ring", "Earrings"],
-    "images": "/products/8.webp"
+    "image": "8_62ee3f5f8d.webp",
+    "images": "/products/8_62ee3f5f8d.webp"
   },
   {
     "id": 116,
@@ -162,7 +173,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Blue Sapphire", "Diamond"],
     "jewellery": ["Necklace"],
-    "images": "/products/9.webp"
+    "image": "9_e114427fa3.webp",
+    "images": "/products/9_e114427fa3.webp"
   },
   {
     "id": 117,
@@ -175,7 +187,8 @@
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Bracelet", "Ring", "Earrings", "Necklace"],
-    "images": "/products/11.webp"
+    "image": "11_e37c49dc90.webp",
+    "images": "/products/11_e37c49dc90.webp"
   },
   {
     "id": 214,
@@ -191,7 +204,8 @@
     ],
     "gems": ["Diamond", "Pink Diamond"],
     "jewellery": ["Ring"],
-    "images": "/products/67090532_10156998318395073_3804379647366397952_n.webp"
+    "image": "67090532_10156998318395073_3804379647366397952_n_3759fcd5a4.webp",
+    "images": "/products/67090532_10156998318395073_3804379647366397952_n_3759fcd5a4.webp"
   },
   {
     "id": 216,
@@ -207,7 +221,8 @@
     ],
     "gems": ["Diamond", "Pink Diamond"],
     "jewellery": ["Ring"],
-    "images": "/products/65552843_10156940136155073_7628116355853582336_n.webp"
+    "image": "65552843_10156940136155073_7628116355853582336_n_9f98a0e486.webp",
+    "images": "/products/65552843_10156940136155073_7628116355853582336_n_9f98a0e486.webp"
   },
   {
     "id": 218,
@@ -223,7 +238,8 @@
     ],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Necklace"],
-    "images": "/products/65118992_10156938980315073_8905504101438062592_n.webp"
+    "image": "65118992_10156938980315073_8905504101438062592_n_65967f09c3.webp",
+    "images": "/products/65118992_10156938980315073_8905504101438062592_n_65967f09c3.webp"
   },
   {
     "id": 221,
@@ -235,7 +251,8 @@
     "description": "World's Best Fancy Shape Diamonds . . . Pears, Marquises, Ovals, Asschers and Rounds Necklace . . . Collector's Edition . . .",
     "categories": ["Bridal and Wedding Jewellery"],
     "gems": ["Diamond"],
-    "images": "/products/61689090_10156881591990073_5061918545189797888_n-2.webp"
+    "image": "61689090_10156881591990073_5061918545189797888_n_2_0d16403466.webp",
+    "images": "/products/61689090_10156881591990073_5061918545189797888_n_2_0d16403466.webp"
   },
   {
     "id": 223,
@@ -251,7 +268,8 @@
     ],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Earrings", "Necklace"],
-    "images": "/products/59670840_10156812459535073_2486274782887149568_n.webp"
+    "image": "59670840_10156812459535073_2486274782887149568_n_916e647c8d.webp",
+    "images": "/products/59670840_10156812459535073_2486274782887149568_n_916e647c8d.webp"
   },
   {
     "id": 225,
@@ -267,6 +285,7 @@
     ],
     "gems": ["Diamond", "Emerald"],
     "jewellery": ["Tiara"],
-    "images": "/products/58374471_10156783704415073_3940269144141725696_n.webp"
+    "image": "58374471_10156783704415073_3940269144141725696_n_9f5f418398.webp",
+    "images": "/products/58374471_10156783704415073_3940269144141725696_n_9f5f418398.webp"
   }
 ]

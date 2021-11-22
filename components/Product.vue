@@ -5,6 +5,8 @@
         <img
           class="w-full h-96 object-cover rounded-md"
           :src="product.images"
+          :srcset="`/products/small_${product.image} 480w, /products/medium_${product.image} 768w, /products/large_${product.image} 1080w, /products/${product.image} 1280w`"
+          sizes="50vw"
           :alt="product.name"
         />
         <NuxtLink

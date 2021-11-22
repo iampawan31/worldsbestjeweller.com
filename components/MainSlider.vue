@@ -8,7 +8,9 @@
         <div>
           <img
             class="w-full h-72 md:h-96 lg:h-screen object-cover"
-            :src="slide.image"
+            :src="slide.imageFullPath"
+            :srcset="`/slides/small_${slide.image} 480w, /slides/medium_${slide.image} 768w, /slides/large_${slide.image} 1080w, /slides/${slide.image} 1280w`"
+            sizes="50vw"
             alt=""
           />
         </div>
@@ -64,31 +66,38 @@ export default {
       },
       slideImages: [
         {
-          image: '/slides/1.webp',
+          image: '1_70f2359333.webp',
+          imageFullPath: '/slides/1_70f2359333.webp',
           text: 'Jeweller to the royal families of the world since 1807',
         },
         {
-          image: '/slides/2.webp',
+          image: '2_ee3817ce7a.webp',
+          imageFullPath: '/slides/2_ee3817ce7a.webp',
           text: 'regal estate jewellery from the treasure troves',
         },
         {
-          image: '/slides/3.webp',
+          image: '3_8b7493e8e0.webp',
+          imageFullPath: '/slides/3_8b7493e8e0.webp',
           text: 'splendid artistry',
         },
         {
-          image: '/slides/4.webp',
+          image: '4_d476d652fa.webp',
+          imimageFullPathage: '/slides/4_d476d652fa.webp',
           text: 'intricate & timeless craftsmanship',
         },
         {
-          image: '/slides/5.webp',
+          image: '5_85dd3f6054.webp',
+          imageFullPath: '/slides/5_85dd3f6054.webp',
           text: 'delicate luxury',
         },
         {
-          image: '/slides/6.webp',
+          image: '6_ded88c4888.webp',
+          imageFullPath: '/slides/6_ded88c4888.webp',
           text: 'jewellery that is your crowning glory',
         },
         {
-          image: '/slides/7.webp',
+          image: '7_fb8f12b1ed.webp',
+          imageFullPath: '/slides/7_fb8f12b1ed.webp',
           text: 'masters of dreams',
         },
       ],

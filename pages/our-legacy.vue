@@ -3,7 +3,9 @@
     <!-- Main Banner -->
     <div class="relative">
       <img
-        src="/our-legacy.webp"
+        src="/our_legacy_71bbe7aa1a.webp"
+        :srcset="`/small_our_legacy_71bbe7aa1a.webp 480w, /medium_our_legacy_71bbe7aa1a.webp 768w, /large_our_legacy_71bbe7aa1a.webp 1080w, /our_legacy_71bbe7aa1a.webp 1280w`"
+        sizes="50vw"
         alt="Our Legacy"
         class="h-48 sm:h-72 lg:h-screen object-cover w-full"
       />
@@ -80,7 +82,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:gap-10">
         <div>
           <img
-            src="/our-legacy-second-image.webp"
+            src="/our_legacy_second_image_c76e0e4173.webp"
+            :srcset="`/small_our_legacy_second_image_c76e0e4173.webp 480w, /medium_our_legacy_second_image_c76e0e4173.webp 768w, /large_our_legacy_second_image_c76e0e4173.webp 1080w, /our_legacy_second_image_c76e0e4173.webp 1280w`"
+            sizes="50vw"
             class="rounded-md shadow-md"
             alt=""
           />

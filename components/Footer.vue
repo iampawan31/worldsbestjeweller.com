@@ -4,7 +4,7 @@
       <div class="flex flex-col justify-center items-center space-y-4">
         <div>
           <img
-            src="/logo-white.png"
+            src="/logo-white.webp"
             class="w-48 lg:w-72 p-1 bg-opacity-50"
             alt=""
           />

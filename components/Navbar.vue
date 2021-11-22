@@ -8,7 +8,7 @@
             <!-- Website Logo -->
             <NuxtLink to="/" class="">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Logo"
                 class="h-6 lg:h-10 mr-2 lg:mr-0"
               />
