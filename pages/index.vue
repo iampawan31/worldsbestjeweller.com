@@ -208,6 +208,7 @@ import {
   faLock,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
+
 export default {
   async asyncData({ $content, error }) {
     let products
@@ -219,6 +220,16 @@ export default {
     return {
       products,
     }
+  },
+  head: {
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Jewellers since 1807. Jewellers to the Royal Families of the world. Best of the best diamonds, gems and jewellery. Rare, Timeless and Regal Estate Jewellery',
+      },
+    ],
   },
   computed: {
     longArrow() {
