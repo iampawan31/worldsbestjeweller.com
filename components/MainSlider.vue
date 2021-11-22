@@ -20,7 +20,7 @@
             lg:p-3
             absolute
             bottom-10
-            lg:bottom-48
+            lg:bottom-24
             left-2
             lg:left-10
             sm:text-xl
@@ -37,7 +37,7 @@
           {{ slide.text }}
         </div></swiper-slide
       >
-      <div slot="pagination" class="swiper-pagination"></div>
+      <div slot="pagination" class="hidden lg:block swiper-pagination"></div>
     </swiper>
   </client-only>
 </template>
