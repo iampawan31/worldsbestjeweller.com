@@ -60,13 +60,19 @@
           >
         </div>
         <div class="flex justify-center items-center space-x-4">
-          <a href="http://instagram.com/jhaverinalin" target="_blank"
+          <a
+            href="http://instagram.com/jhaverinalin"
+            aria-label="Instagram"
+            target="_blank"
             ><font-awesome-icon
               size="2x"
               :icon="faInstagram"
             ></font-awesome-icon
           ></a>
-          <a href="https://www.facebook.com/nalinjhaveri" target="_blank"
+          <a
+            href="https://www.facebook.com/nalinjhaveri"
+            aria-label="Facebook"
+            target="_blank"
             ><font-awesome-icon size="2x" :icon="faFacebook"></font-awesome-icon
           ></a>
         </div>

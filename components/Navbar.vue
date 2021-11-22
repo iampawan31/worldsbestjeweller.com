@@ -90,6 +90,7 @@
         <div class="md:hidden flex items-center">
           <button
             class="outline-none mobile-menu-button"
+            aria-label="Menu Icon"
             @click="isOpen = !isOpen"
           >
             <svg
