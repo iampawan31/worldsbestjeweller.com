@@ -162,7 +162,12 @@
               <img
                 class="w-full h-48 md:h-60 object-cover"
                 src="/home_1_4cbf018724.webp"
-                :srcset="`/small_home_1_4cbf018724.webp 480w, /medium_home_1_4cbf018724.webp 768w, /large_home_1_4cbf018724.webp 1080w, /home_1_4cbf018724.webp 1280w`"
+                srcset="
+                  /small_home_1_4cbf018724.webp   480w,
+                  /medium_home_1_4cbf018724.webp  768w,
+                  /home_1_4cbf018724.webp        1080w,
+                  /home_1_4cbf018724.webp        1280w
+                "
                 sizes="50vw"
                 alt=""
               />
@@ -171,7 +176,12 @@
               <img
                 class="w-full h-48 md:h-60 object-cover"
                 src="/home_2_5e9a24e137.webp"
-                :srcset="`/small_home_2_5e9a24e137.webp 480w, /medium_home_2_5e9a24e137.webp 768w, /large_home_2_5e9a24e137.webp 1080w, /home_2_5e9a24e137.webp 1280w`"
+                srcset="
+                  /small_home_2_5e9a24e137.webp   480w,
+                  /medium_home_2_5e9a24e137.webp  768w,
+                  /home_2_5e9a24e137.webp        1080w,
+                  /home_2_5e9a24e137.webp        1280w
+                "
                 sizes="50vw"
                 alt=""
               />
@@ -180,7 +190,12 @@
               <img
                 class="w-full h-48 md:h-60 object-cover"
                 src="/home_3_89046751d7.webp"
-                :srcset="`/small_home_3_89046751d7.webp 480w, /medium_home_3_89046751d7.webp 768w, /large_home_3_89046751d7.webp 1080w, /home_3_89046751d7.webp 1280w`"
+                srcset="
+                  /small_home_3_89046751d7.webp   480w,
+                  /medium_home_3_89046751d7.webp  768w,
+                  /home_3_89046751d7.webp        1080w,
+                  /home_3_89046751d7.webp        1280w
+                "
                 sizes="50vw"
                 alt=""
               />
@@ -189,7 +204,12 @@
               <img
                 class="w-full h-48 md:h-60 object-cover"
                 src="/home_4_86076d5d23.webp"
-                :srcset="`/small_home_4_86076d5d23.webp 480w, /medium_home_4_86076d5d23.webp 768w, /large_home_4_86076d5d23.webp 1080w, /home_4_86076d5d23.webp 1280w`"
+                srcset="
+                  small_home_4_86076d5d23.webp    480w,
+                  /medium_home_4_86076d5d23.webp  768w,
+                  /home_4_86076d5d23.webp        1080w,
+                  /home_4_86076d5d23.webp        1280w
+                "
                 sizes="50vw"
                 alt=""
               />
