@@ -25,7 +25,7 @@
         </div>
         <div class="mt-4">
           <NuxtLink
-            to="/collection-2022"
+            to="/collection"
             class="
               bg-primary
               text-black
@@ -152,7 +152,7 @@
               transition
               hover:bg-black hover:text-primary
             "
-            to="/collection-2022"
+            to="/collection"
             >Explore Collection</NuxtLink
           >
         </div>

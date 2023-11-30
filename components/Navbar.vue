@@ -43,7 +43,7 @@
               >Our Legacy</NuxtLink
             >
             <NuxtLink
-              to="/collection-2022"
+              to="/collection"
               class="
                 py-4
                 px-2
@@ -53,7 +53,7 @@
                 transition
                 duration-300
               "
-              >Collection 2022</NuxtLink
+              >Collection</NuxtLink
             >
             <NuxtLink
               to="/contact"
@@ -134,7 +134,7 @@
         </li>
         <li>
           <NuxtLink
-            to="/collection-2022"
+            to="/collection"
             class="
               block
               text-sm
@@ -144,7 +144,7 @@
               transition
               duration-300
             "
-            >Collection 2022</NuxtLink
+            >Collection</NuxtLink
           >
         </li>
         <li>

@@ -35,7 +35,7 @@
             >Our legacy</NuxtLink
           >
           <NuxtLink
-            to="/collection-2022"
+            to="/collection"
             class="
               hover:text-primary
               transition
@@ -44,7 +44,7 @@
               font-light
               uppercase
             "
-            >Collection 2022</NuxtLink
+            >Collection</NuxtLink
           >
           <NuxtLink
             to="/contact"

@@ -13,7 +13,7 @@
         mb-24
       "
     >
-      Collection 2022
+      Collection
     </div>
     <div class="grid grid-cols-4 gap-10">
       <div class="hidden lg:block h-auto px-4 pb-6">
